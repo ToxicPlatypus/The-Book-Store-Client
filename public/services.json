@@ -4,6 +4,8 @@
         "name": "Dog Man Mothering Heights",
         "price": "300",
         "description": "Dog Man is down on his luck, Petey confronts his not so purr-fect past, and Grampa is up to no good. The world is spinning out of control as new villains spill into town. Everything seems dark and full of despair. But hope is not lost. Can the incredible power of love save the day?",
+        "supplier": "Rafid Store",
+        "quantity": 100,
         "img": "https://i.ibb.co/0XnN508/1.jpg"
     },
     {
@@ -11,6 +13,8 @@
         "name": "American Marxism",
         "price": "100",
         "description": "The seven-time #1 New York Times bestselling author, Fox News star, and radio host Mark R. Levin explains how the dangers he warned against in the timely yet timeless (David Limbaugh, author of Jesus Is Risen) bestseller Liberty and Tyranny have come to pass.",
+        "supplier": "Rafid Store",
+        "quantity": 234,
         "img": "https://i.ibb.co/GH5XJB6/2.jpg"
     },
     {
@@ -18,6 +22,8 @@
         "name": "Big Shot",
         "price": "150",
         "description": "In Big Shot, book 16 of the Diary of a Wimpy Kid series from #1 international bestselling author Jeff Kinney, Greg Heffley and sports just don't mix.",
+        "supplier": "Rafid Store",
+        "quantity": 125,
         "img": "https://i.ibb.co/16knMcd/3.jpg"
     },
     {
@@ -25,6 +31,8 @@
         "name": "The Boy, the Mole, the Fox and the Horse",
         "price": "180",
         "description": "Charlie Mackesy offers inspiration and hope in uncertain times in this beautiful book, following the tale of a curious boy, a greedy mole, a wary fox and a wise horse who find themselves together in sometimes difficult terrain, sharing their greatest fears and biggest discoveries about vulnerability, kindness, hope, friendship and love.",
+        "supplier": "Rafid Store",
+        "quantity": 723,
         "img": "https://i.ibb.co/QnJPtbc/4.jpg"
     },
     {
@@ -32,6 +40,8 @@
         "name": "Atomic Habits",
         "price": "100",
         "description": "No matter your goals, Atomic Habits offers a proven framework for improving--every day. James Clear, one of the world's leading experts on habit formation, reveals practical strategies that will teach you exactly how to form good habits, break bad ones, and master the tiny behaviors that lead to remarkable results.",
+        "supplier": "Rafid Store",
+        "quantity": 723,
         "img": "https://i.ibb.co/TtY2yjH/5.jpg"
     },
     {
@@ -39,6 +49,8 @@
         "name": "It Ends with Us",
         "price": "300",
         "description": "As questions about her new relationship overwhelm her, so do thoughts of Atlas Corrigan--her first love and a link to the past she left behind. He was her kindred spirit, her protector.",
+        "supplier": "Rafid Store",
+        "quantity": 12,
         "img": "https://i.ibb.co/xjNsPsP/6.jpg"
     }
 ]
