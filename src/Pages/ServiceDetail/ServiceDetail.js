@@ -23,7 +23,11 @@ const ServiceDetail = () => {
       <h4>Available Books: {service.quantity}</h4>
       <div className="text-center">
         <button className="btn btn-primary">Delivered</button>
+
+        <h2 className="mt-4">Restock Items</h2>
+        <input type="number" />
       </div>
+      <button className="btn btn-primary mt-2">Restock</button>
     </div>
   );
 };
