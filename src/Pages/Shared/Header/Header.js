@@ -44,8 +44,18 @@ const Header = () => {
             </Nav>
             <Nav>
               <Nav.Link as={Link} to="about">
-                About Us
+                About
               </Nav.Link>
+              {user && (
+                <>
+                  <Nav.Link as={Link} to="addservice">
+                    Add Inventory
+                  </Nav.Link>
+                  <Nav.Link as={Link} to="manage">
+                    Manage Inventory
+                  </Nav.Link>
+                </>
+              )}
               {user ? (
                 <button
                   className="btn btn-link text-white text-decoration-none"
