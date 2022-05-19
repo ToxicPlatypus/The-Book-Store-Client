@@ -2,7 +2,7 @@
 
 This is an assignment of Programming Hero. The site is a book inventory site. You can add, update, delete books from your inventory.
 
-Live Site Link [Create React App](https://github.com/facebook/create-react-app).
+Live Site Link [Click Here](https://assignment-11-4cc8b.web.app/).
 
 ## Functionality
 

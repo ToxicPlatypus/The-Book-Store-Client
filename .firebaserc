@@ -1,5 +1,7 @@
 {
   "projects": {
-    "default": "warehouse-application"
-  }
+    "default": "assignment-11-4cc8b",
+    "build": "assignment-11-4cc8b"
+  },
+  "targets": {}
 }
