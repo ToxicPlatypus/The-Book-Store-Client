@@ -45,6 +45,19 @@ const AddService = () => {
           type="text"
           {...register("img")}
         />
+        <input
+          className="mb-2"
+          placeholder="Supplier"
+          type="text"
+          {...register("supplier")}
+        />
+
+        <input
+          className="mb-2"
+          placeholder="Available Books"
+          type="number"
+          {...register("quantity")}
+        />
         <input type="submit" value="Add Book" />
       </form>
     </div>

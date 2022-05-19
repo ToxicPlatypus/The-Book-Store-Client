@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
-import Service from "../Service/Service";
-import "./Services.css";
+import Service from "../Pages/Home/Service/Service";
 
-const Services = () => {
+const ManageInventory = () => {
   const [services, setServices] = useState([]);
 
   useEffect(() => {
@@ -10,13 +9,11 @@ const Services = () => {
       .then((res) => res.json())
       .then((data) => setServices(data));
   }, []);
-
   return (
-    <div id="services" className="container">
-      <div className="row">
-        <h1 className="text-primary text-center mt-5">Best Sellers</h1>
+    <div>
+      <div className="row mt-4">
         <div className="services-container">
-          {services.slice(0, 6).map((service) => (
+          {services.map((service) => (
             <Service key={service._id} service={service}></Service>
           ))}
         </div>
@@ -25,4 +22,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default ManageInventory;

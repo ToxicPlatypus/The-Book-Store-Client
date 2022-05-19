@@ -1,5 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
+import ManageInventory from "./ManageInventory/ManageInventory";
 import About from "./Pages/About/About";
 import AddService from "./Pages/AddService/AddService";
 import Checkout from "./Pages/Checkout/Checkout/Checkout";
@@ -52,6 +53,14 @@ function App() {
           element={
             <RequireAuth>
               <ManageServices></ManageServices>
+            </RequireAuth>
+          }
+        ></Route>
+        <Route
+          path="/manageinventory"
+          element={
+            <RequireAuth>
+              <ManageInventory></ManageInventory>
             </RequireAuth>
           }
         ></Route>
