@@ -1,25 +1,56 @@
-import React, { useEffect, useState } from "react";
-import PageTitle from "../Shared/PageTitle/PageTitle";
-import Service from "../Home/Service/Service";
+import React from "react";
+import useServices from "../../hooks/useServices";
+import { Link } from "react-router-dom";
 
 const About = () => {
-  const [services, setServices] = useState([]);
+  const [services, setServices] = useServices();
 
-  useEffect(() => {
-    fetch("http://localhost:5000/service")
-      .then((res) => res.json())
-      .then((data) => setServices(data));
-  }, []);
+  const handleDelete = (id) => {
+    const proceed = window.confirm("Are you sure to delete?");
+    if (proceed) {
+      const url = `http://localhost:5000/service/${id}`;
+      fetch(url, {
+        method: "DELETE",
+      })
+        .then((res) => res.json())
+        .then((data) => {
+          console.log(data);
+          const remaining = services.filter((service) => service._id !== id);
+          setServices(remaining);
+        });
+    }
+  };
+
   return (
-    <div className="container">
-      <PageTitle title="About"></PageTitle>
-      <h2 className="text-primary text-center">This is your added books</h2>
-      <div className="row mt-4">
-        <div className="services-container">
-          {services.slice(6).map((service) => (
-            <Service key={service._id} service={service}></Service>
-          ))}
-        </div>
+    <div className="w-50 mx-auto">
+      <h2>Manage the Books</h2>
+      <div>
+        {services.slice(6).map((service) => (
+          <div key={service._id}>
+            {/* <h5>{service.name} </h5> */}
+            <img className="w-25" src={service.img} alt="" />
+            <h2>{service.name}</h2>
+            <p>Price: {service.price}</p>
+            <p>
+              <small>{service.description}</small>
+            </p>
+            <p className="fw-bold">Supplier: {service.supplier}</p>
+            <h5>Available: {service.quantity} sets</h5>
+            <button
+              className="m-4 btn btn-warning py-2 px-4"
+              onClick={() => handleDelete(service._id)}
+            >
+              Delete
+            </button>
+          </div>
+        ))}
+      </div>
+      <div>
+        <h1 className="text-secondary">Add a new Book</h1>
+        <Link to="/addservice" className="btn btn-primary p-4 text-center">
+          {" "}
+          Add a New Book
+        </Link>
       </div>
     </div>
   );

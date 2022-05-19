@@ -43,11 +43,11 @@ const Header = () => {
               </NavDropdown> */}
             </Nav>
             <Nav>
-              <Nav.Link as={Link} to="about">
-                My Books
-              </Nav.Link>
               {user && (
                 <>
+                  <Nav.Link as={Link} to="myitems">
+                    My Books
+                  </Nav.Link>
                   <Nav.Link as={Link} to="addservice">
                     Add Books
                   </Nav.Link>
