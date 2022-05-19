@@ -3,6 +3,9 @@ import { useForm } from "react-hook-form";
 
 const AddService = () => {
   const { register, handleSubmit } = useForm();
+  function refreshPage() {
+    window.location.reload(false);
+  }
 
   const onSubmit = (data) => {
     console.log(data);
@@ -58,7 +61,7 @@ const AddService = () => {
           type="number"
           {...register("quantity")}
         />
-        <input type="submit" value="Add Book" />
+        <input onClick={refreshPage} type="submit" value="Add Book" />
       </form>
     </div>
   );

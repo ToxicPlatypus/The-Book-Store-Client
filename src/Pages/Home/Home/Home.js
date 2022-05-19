@@ -13,7 +13,10 @@ const Home = () => {
       <Banner></Banner>
       <Services></Services>
       <div className="mt-4 container text-center">
-        <Link to="/manageinventory" className="btn btn-warning p-4">
+        <Link to="/manageinventory" className="btn btn-warning p-4 mx-2">
+          Show All Books
+        </Link>
+        <Link to="/manage" className="btn btn-warning p-4">
           Manage Inventory
         </Link>
       </div>
