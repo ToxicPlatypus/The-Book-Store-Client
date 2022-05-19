@@ -20,7 +20,7 @@ const ServiceDetail = () => {
         setService(data);
         setSpinner(false);
       });
-  }, [serviceId]);
+  }, [service, serviceId]);
 
   const handleDelivered = () => {
     let quantity = service.quantity;

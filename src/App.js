@@ -1,5 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
+import Blogs from "./Blogs/Blogs";
 import ManageInventory from "./ManageInventory/ManageInventory";
 import About from "./Pages/About/About";
 import AddService from "./Pages/AddService/AddService";
@@ -21,6 +22,9 @@ function App() {
       <Routes>
         <Route path="/" element={<Home></Home>}></Route>
         <Route path="/home" element={<Home></Home>}></Route>
+        <Route path="/blogs" element={<Blogs></Blogs>}>
+          {" "}
+        </Route>
         <Route
           path="/inventory/:serviceId"
           element={
