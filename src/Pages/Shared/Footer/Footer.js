@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <footer className="footer mt-4">
       <p>
-        <small>copyright @ {year} Rafid Rabbi</small>
+        <small>Copyright @ {year} Rafid Rabbi</small>
       </p>
     </footer>
   );

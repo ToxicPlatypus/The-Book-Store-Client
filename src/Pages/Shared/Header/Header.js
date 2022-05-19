@@ -1,6 +1,6 @@
 import { signOut } from "firebase/auth";
 import React from "react";
-import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
+import { Container, Nav, Navbar } from "react-bootstrap";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { Link } from "react-router-dom";
 import auth from "../../../firebase.init";
@@ -25,9 +25,18 @@ const Header = () => {
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href="/">Home</Nav.Link>
-              <Nav.Link href="home#services">Best Seller</Nav.Link>
-              <Nav.Link href="/blogs">Blogs</Nav.Link>
+              <Nav.Link className="text-light" href="/">
+                Home
+              </Nav.Link>
+              <Nav.Link className="text-light" href="home#services">
+                Best Seller
+              </Nav.Link>
+              <Nav.Link className="text-light" href="/manageinventory">
+                All Books
+              </Nav.Link>
+              <Nav.Link className="text-light" href="/blogs">
+                Blogs
+              </Nav.Link>
 
               {/* <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
                 <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
@@ -46,13 +55,13 @@ const Header = () => {
             <Nav>
               {user && (
                 <>
-                  <Nav.Link as={Link} to="myitems">
+                  <Nav.Link className="text-light" as={Link} to="myitems">
                     My Books
                   </Nav.Link>
-                  <Nav.Link as={Link} to="addservice">
+                  <Nav.Link className="text-light" as={Link} to="addservice">
                     Add Books
                   </Nav.Link>
-                  <Nav.Link as={Link} to="manage">
+                  <Nav.Link className="text-light" as={Link} to="manage">
                     Manage Books
                   </Nav.Link>
                 </>
@@ -62,7 +71,7 @@ const Header = () => {
                   className="btn btn-link text-white text-decoration-none"
                   onClick={handleSignOut}
                 >
-                  sign out
+                  SignOut
                 </button>
               ) : (
                 <Nav.Link as={Link} to="login">
